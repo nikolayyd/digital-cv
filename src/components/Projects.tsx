@@ -8,7 +8,7 @@ export const Projects = () => {
         {projectsData.map((project, idx) => (
           <div
             key={idx}
-            className="border rounded-lg p-5 bg-white shadow-sm flex flex-col justify-between"
+            className="border border-slate-200 p-5 bg-white shadow-sm flex flex-col justify-between rounded-lg"
           >
             <div>
               <div className="flex items-center justify-between mb-2">
@@ -88,4 +88,4 @@ export const Projects = () => {
       </div>
     </section>
   );
-}
+};
