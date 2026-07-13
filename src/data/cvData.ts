@@ -9,7 +9,7 @@ export const cvData: CVData = {
     email: 'nikolayddragostinov@gmail.com',
     phone: '+359897582777',
     github: 'https://github.com/nikolayyd',
-    linkedin: 'linkedin.com',
+    linkedin: 'https://linkedin.com/in/nikolaydragostinov',
   },
   skills: [
     {
@@ -105,7 +105,7 @@ export const projectsData = [
       'Loaded raw movie data from a CSV file into staging tables in PostgreSQL.',
       'Cleaned and transformed the data using SQL queries to ensure consistency and accuracy.',
       'Transformed columns into normalized tables for better data organization and retrieval.',
-      'Ensure idempodent execution of the ETL process to avoid duplicate data insertion.',
+      'Ensure idempotent execution of the ETL process to avoid duplicate data insertion.',
     ],
     technologies: ['Python', 'Pandas', 'SQLAlchemy', 'PostgreSQL'],
     projectType: 'personal' as const,
