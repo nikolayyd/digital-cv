@@ -1,6 +1,6 @@
 import { projectsData } from '../data/cvData';
 
-export default function Projects() {
+export const Projects = () => {
   return (
     <section className="mb-8">
       <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>

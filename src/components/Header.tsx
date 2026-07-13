@@ -1,6 +1,6 @@
 import { cvData } from '../data/cvData';
 
-export default function Header() {
+export const Header = () => {
   const { name, title, summary, contact } = cvData;
 
   return (

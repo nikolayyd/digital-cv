@@ -1,6 +1,6 @@
 import { cvData } from '../data/cvData';
 
-export default function Experience() {
+export const Experience = () => {
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">

@@ -1,6 +1,6 @@
 import { cvData } from '../data/cvData';
 
-export default function Skills() {
+export const Skills = () => {
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
@@ -30,4 +30,4 @@ export default function Skills() {
       </div>
     </section>
   );
-}
+};
