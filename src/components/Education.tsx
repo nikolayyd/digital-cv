@@ -34,18 +34,9 @@ export const Experience = () => {
                 {job.startDate} – {job.endDate}
               </span>
             </div>
-
-            {/* Списък с отговорности и постижения (Bullets)
-            <ul className="list-disc list-outside ml-4 text-slate-600 space-y-2 text-sm sm:text-base leading-relaxed">
-              {job.description.map((bullet, bIdx) => (
-                <li key={bIdx} className="pl-1 marker:text-indigo-500">
-                  {bullet}
-                </li>
-              ))}
-            </ul> */}
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
