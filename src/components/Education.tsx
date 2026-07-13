@@ -1,6 +1,6 @@
 import { cvData } from '../data/cvData';
 
-export const Experience = () => {
+export const Education = () => {
   return (
     <section className="mb-12">
       {/* Заглавие на секцията */}
