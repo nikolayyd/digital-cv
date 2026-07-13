@@ -3,8 +3,7 @@
 A minimalist, high-performance digital CV built using **React**, **TypeScript**, and **Vite**, styled with **Tailwind CSS**. Designed to be fast, fully responsive, and typed safely from the ground up.
 
 ## 🚀 Live Demo
-
-You can view the live site here: **[https://nikolayyd.github.io/digital-cv/]**
+You can view the live site [here](https://nikolayyd.github.io/digital-cv/).
 
 ---
 
