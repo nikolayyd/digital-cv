@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# Modern Digital CV / Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist, high-performance digital CV built using **React**, **TypeScript**, and **Vite**, styled with **Tailwind CSS**. Designed to be fast, fully responsive, and typed safely from the ground up.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live site here: **[Insert Your GitHub Pages Link Here]**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack & Architecture
 
-## Expanding the ESLint configuration
+- **Framework:** React 19 + Vite (for ultra-fast Hot Module Replacement)
+- **Language:** TypeScript (Strictly typed data structures)
+- **Styling:** Tailwind CSS v4 (Modern utility-first CSS framework with native Vite compilation)
+- **Deployment:** GitHub Pages (Automated via the `gh-pages` pipeline)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Data-Driven Design
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The project separates application logic and layout from the actual resume content. All portfolio information (Work Experience, Skills, Education, Projects) is managed via a single strongly-typed data object located in `src/data/cvData.ts`. This makes updating the CV as simple as editing a static object.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Project Structure
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── types/
+│   └── cv.ts          # Strict TS interfaces for CV entities (Experiences, Projects, Skills)
+├── data/
+│   └── cvData.ts      # Main data engine containing resume content
+├── components/
+│   ├── Header.tsx     # Profile summary and dynamic contact links
+│   ├── Experience.tsx # Vertical chronological timeline of professional history
+│   ├── Projects.tsx   # Categorized showcase cards (Work, Personal, Group) with feature tags
+│   └── Skills.tsx     # Categorized pill layout for tech stack visualization
+├── App.tsx            # Main layout layout orchestration
+└── main.tsx           # Application root entry
 ```
