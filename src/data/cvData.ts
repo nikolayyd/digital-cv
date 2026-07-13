@@ -66,8 +66,16 @@ export const cvData: CVData = {
 
 export const projectsData = [
   {
+    title: 'Interactive Joining Map',
+    description:
+      'Developed an interactive Azure Maps application that retrieves spatial data from PostgreSQL to visualize stations and polylines with layered styling, type legends, and a custom search feature.',
+    technologies: ['React(TypeScript)', 'PHP', 'PostgreSQL', 'Azure Maps SDK'],
+    projectType: 'commercial' as const,
+    liveLink: 'https://webapps.eso.bg/joining/public/map',
+  },
+  {
     title: 'Issues Tracker',
-    description: 'Project and Ticket Management Application (Group project).',
+    description: 'Project and Ticket Management Application.',
     role: 'Contributed to both front-end and back-end development, database management.',
     features: [
       'User authentication and authorization',
@@ -78,14 +86,6 @@ export const projectsData = [
     technologies: ['React', 'TypeScript', 'Objection.js & Knex', 'PostgreSQL'],
     projectType: 'group' as const,
     githubLink: 'https://github.com/andrei1k/Issues-Tracker',
-  },
-  {
-    title: 'Interactive Map',
-    description:
-      'Developed an interactive Azure Maps application that retrieves spatial data from PostgreSQL to visualize stations and polylines with layered styling, type legends, and a custom search feature.',
-    technologies: ['React(TypeScript)', 'PHP', 'PostgreSQL', 'Azure Maps SDK'],
-    projectType: 'commercial' as const,
-    liveLink: 'https://webapps.eso.bg/joining/public/map',
   },
   {
     title: 'User Authentication System',
