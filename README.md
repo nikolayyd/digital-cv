@@ -4,15 +4,15 @@ A minimalist, high-performance digital CV built using **React**, **TypeScript**,
 
 ## 🚀 Live Demo
 
-You can view the live site here: **[Insert Your GitHub Pages Link Here]**
+You can view the live site here: **[https://nikolayyd.github.io/digital-cv/]**
 
 ---
 
 ## 🛠️ Tech Stack & Architecture
 
-- **Framework:** React 19 + Vite (for ultra-fast Hot Module Replacement)
+- **Framework:** React 19 + Vite
 - **Language:** TypeScript (Strictly typed data structures)
-- **Styling:** Tailwind CSS v4 (Modern utility-first CSS framework with native Vite compilation)
+- **Styling:** Tailwind CSS v4
 - **Deployment:** GitHub Pages (Automated via the `gh-pages` pipeline)
 
 ### Data-Driven Design
