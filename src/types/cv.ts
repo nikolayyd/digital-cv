@@ -34,8 +34,7 @@ export interface CVData {
 
 export interface Project {
   title: string;
-  description: string;
-  features?: string[];
+  features: string[];
   technologies?: string[];
   role?: string;
   projectType: 'commercial' | 'personal' | 'group';

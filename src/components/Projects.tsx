@@ -38,10 +38,6 @@ export const Projects = () => {
                 </span>
               </div>
 
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
-                {project.description}
-              </p>
-
               {project.features && project.features.length > 0 && (
                 <div className="mb-4">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">

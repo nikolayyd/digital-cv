@@ -4,7 +4,7 @@ export const cvData: CVData = {
   name: 'Nikolay Dragostinov',
   title: 'Application Systems Engineer',
   summary:
-    'Full-stack developer experienced in building internal web applications from scratch to production. Skilled in developing front-end features, writing back-end services, working with PostgreSQL databases, and deploying the final applications to Linux environments.',
+    'Full-stack developer experienced in building internal web applications from scratch to production. Skilled in developing front-end features, writing back-end services, working with relational databases, and deploying the final applications to Linux environments.',
   contact: {
     email: 'nikolayddragostinov@gmail.com',
     phone: '+359897582777',
@@ -14,7 +14,7 @@ export const cvData: CVData = {
   skills: [
     {
       category: 'Programming Languages',
-      items: ['JavaScript(ES6+)', 'TypeScript', 'C++', 'PHP', 'Python'],
+      items: ['JavaScript(ES6+)', 'TypeScript', 'PHP', 'C++', 'Python'],
     },
     {
       category: 'Technologies & Frameworks',
@@ -30,14 +30,14 @@ export const cvData: CVData = {
     },
     {
       category: 'Environments & Databases',
-      items: ['PostgreSQL', 'REST APIs', 'Apache', 'Linux', 'Git'],
+      items: ['REST APIs', 'Apache', 'Linux', 'PostgreSQL', 'Git'],
     },
   ],
   experience: [
     {
       role: 'Application Systems Engineer',
       company: 'Electricity System Operator (ESO) - Bulgaria',
-      startDate: 'October 2025',
+      startDate: 'September 2025',
       endDate: 'Present',
       key_responsibilities: [
         'Contributed to end-to-end development of internal web applications from implementation to production deployment.',
@@ -67,15 +67,19 @@ export const cvData: CVData = {
 export const projectsData = [
   {
     title: 'Interactive Joining Map',
-    description:
-      'Developed an interactive Azure Maps application that retrieves spatial data from PostgreSQL to visualize stations and polylines with layered styling, type legends, and a custom search feature.',
+    features: [
+      'Interactive Azure Maps integration for spatial data visualization (stations and polylines)',
+      'Real-time PostgreSQL database querying to retrieve and render geographic layers',
+      'Advanced filtering system based on multiple custom criteria and attributes',
+      'Custom search functionality for quick asset location and map navigation',
+      'Dynamic layered styling with distinct type legends for enhanced data readability',
+    ],
     technologies: ['React(TypeScript)', 'PHP', 'PostgreSQL', 'Azure Maps SDK'],
     projectType: 'commercial' as const,
     liveLink: 'https://webapps.eso.bg/joining/public/map',
   },
   {
     title: 'Issues Tracker',
-    description: 'Project and Ticket Management Application.',
     role: 'Contributed to both front-end and back-end development, database management.',
     features: [
       'User authentication and authorization',
@@ -95,7 +99,14 @@ export const projectsData = [
       'JWT-based authentication with expiration for secure API access',
       'Protected routes (outlets) and middleware for user authorization',
     ],
-    technologies: ['Node.js', 'Express', 'MongoDB', 'JWT'],
+    technologies: [
+      'React(TypeScript)',
+      'Node.js',
+      'Zod',
+      'Express',
+      'PostgreSQL',
+      'JWT',
+    ],
     projectType: 'personal' as const,
     githubLink: 'https://github.com/nikolayyd/outlet-auth',
   },

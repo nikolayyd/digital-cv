@@ -1,8 +1,8 @@
 import { Header } from './components/Header';
 import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
-import { Projects }from './components/Projects';
-import { Education }  from './components/Education';
+import { Projects } from './components/Projects';
+import { Education } from './components/Education';
 export const App = () => {
   return (
     <div className="min-h-screen bg-slate-50/50">
@@ -17,4 +17,4 @@ export const App = () => {
       </div>
     </div>
   );
-}
+};

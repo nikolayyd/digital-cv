@@ -2,7 +2,7 @@ import { cvData } from '../data/cvData';
 
 export const Header = () => {
   const { name, title, summary, contact } = cvData;
-
+  console.log('Contact object:', contact);
   return (
     <header className="border-b border-slate-200 pb-8 mb-8">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -22,7 +22,7 @@ export const Header = () => {
             📧 {contact.email}
           </a>
           <a
-            href={`https://${contact.github}`}
+            href={contact.github}
             target="_blank"
             rel="noreferrer"
             className="hover:text-indigo-600 transition-colors"
@@ -30,7 +30,7 @@ export const Header = () => {
             💻 GitHub
           </a>
           <a
-            href={`https://${contact.linkedin}`}
+            href={contact.linkedin}
             target="_blank"
             rel="noreferrer"
             className="hover:text-indigo-600 transition-colors"
@@ -45,4 +45,4 @@ export const Header = () => {
       </p>
     </header>
   );
-}
+};
